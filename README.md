@@ -1,50 +1,72 @@
-# sql_project_job_analysis
-# 📊 Data Analyst Jobs & Skills Analysis
+# 📊 SQL Project — Job & Skills Analysis  
 
-**A SQL-driven analysis of Data Analyst job postings** to discover top-paying jobs, in-demand skills, and the most optimal skills (high demand + high salary).
-
----
-
-## 🔎 Project Overview
-
-This repository analyzes job postings for the role *Data Analyst* and extracts insights about:
-- Top-paying job postings
-- Skills required by the top-paying jobs
-- The most in-demand skills by count
-- Skills that offer the best balance of demand and average salary
-
-SQL queries used:
-- `1_top_paying_jobs.sql`
-- `2_top_paying_job_skills.sql`
-- `3_in-demand_skills.sql`
-- `top_paying_skills.sql`
-- `most_optimal_skills.sql`
-
-Result files (already included):
-- `Result_!.json` — Top paying jobs
-- `result_2.json` — skills for top paying jobs
-- `result_3.json` — in-demand skills
-- `result_4.json` — demand + avg salary (optimal skills)
-- `result_5.json` — top paying skills (avg salary)
+## 🔍 Project Overview  
+This project analyzes **Data Analyst job postings** using SQL.  
+It explores:  
+- Top-paying job roles  
+- Skills required for those high-paying jobs  
+- Most in-demand skills  
+- Highest-paying skills  
+- Skills that are both in-demand and high-paying (optimal skills)  
 
 ---
 
-## 📈 Visuals
+## 📂 Files in Repository  
+- **SQL Queries**
+  - `1_top_paying_jobs.sql` → Top 10 highest-paying Data Analyst jobs  
+  - `2_top_paying_job_skills.sql` → Skills required for top-paying jobs  
+  - `3_in-demand_skills.sql` → Most in-demand skills  
+  - `top_paying_skills.sql` → Highest-paying skills by average salary  
+  - `most_optimal_skills.sql` → Skills balancing demand & salary  
 
-The repository includes visuals generated from the JSON outputs:
+- **Results (JSON)**  
+  - `Result_!.json` → Top-paying jobs  
+  - `result_2.json` → Skills for top-paying jobs  
+  - `result_3.json` → In-demand skills  
+  - `result_4.json` → Optimal skills (demand + salary)  
+  - `result_5.json` → Highest-paying skills  
 
-- `images/top_in_demand_skills.png` — Top 10 in-demand skills (by count)
-- `images/top_paying_skills.png` — Top 15 skills by average salary
-- `images/demand_vs_salary_scatter.png` — Demand vs Average Salary (helps find high-demand, high-pay skills)
-
-If these images are missing, generate them using the included script: `generate_visuals.py`.
+- **Visuals (PNG)**  
+  - `in_demand_skills.png`  
+  - `top_paying_skills.png`  
+  - `top_paying_jobs.png`  
+  - `optimal_skills.png`  
 
 ---
 
-## 🛠 How to generate visuals
+## 📈 Visual Insights  
 
-1. Create a virtual environment (recommended):
+### 🔥 Top In-Demand Skills  
+![Top In-Demand Skills](top_in_demand_skills.png)  
+
+### 💰 Top Paying Skills  
+![Top Paying Skills](top_paying_skills.png)  
+
+### ⚡ Demand vs Salary (Optimal Skills)  
+![Demand vs Salary](demand_vs_salary_scatter.png)  
+
+### 🎯 Top Paying Jobs (Preview)  
+![Top Paying Jobs](top_paying_jobs.png)  
+
+---
+
+## 🧾 Key Findings  
+- **Top-paying roles** include Director & Principal Data Analyst positions with salaries above \$200K+.  
+- **Most in-demand skills**: SQL, Excel, Python, Tableau, Power BI.  
+- **Highest-paying skills**: Solidity, Couchbase, Golang, DataRobot, TensorFlow.  
+- **Optimal skills (best mix of salary & demand)**: SQL, Python, Tableau, Power BI, Snowflake, AWS, Azure.  
+
+---
+
+## 🛠 Tools & Technologies  
+- SQL (PostgreSQL)  
+- Data from job postings dataset  
+- Visualizations generated with Python (Matplotlib + Pandas)  
+
+---
+
+## 🚀 How to Use  
+1. Clone the repo:  
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate   # macOS / Linux
-   .venv\Scripts\activate      # Windows
+   git clone https://github.com/Pranayy01/sql_project_job_analysis.git
+   cd sql_project_job_analysis
